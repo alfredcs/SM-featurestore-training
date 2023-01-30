@@ -11,15 +11,15 @@ This repo holds code for training a ML model and integrating it with SageMaker F
 The data ingestion process involves extracting data from its source, cleaning and transforming it, and finally loading it into the SageMaker Feature Store. The data used in this project is stored in an S3 bucket.
 ![image](https://github.com/aws-samples/amazon-sagemaker-feature-store-end-to-end-workshop/raw/main/images/workshop.png)
 
-## Model Training
+## Model Training and Inferencing
 
-### Leverage offline ifeature store
+### Leverage offline feature store for model training
 
 - Training a model using feature sets derived from the Offline feature store
 - Perform batch scoring using feature sets derived from Offline feature store in CSV and Parquet format
 - Update customers Feature Group to add new feature, ingest data into the feature group and retrain XGBoost model using this data.
 
-### Leveraging the online feature store
+### Leveraging the online feature store for inference
 
 - Get record from the online feature store during single inference.
 - Use a feature set to retrieve features from multiple online feature groups in a single call from the endpoint.
